@@ -237,7 +237,7 @@ surrounding geometry; please let the mapper know so they can fix the problem!",
     }
 }
 
-// Give a valid client index and spawnpoint edict,
+// Given a valid client index and spawnpoint edict,
 // teleport the client to the spawnpoint's coordinates.
 void MoveToSpawnPoint(int client, int spawnpoint)
 {
