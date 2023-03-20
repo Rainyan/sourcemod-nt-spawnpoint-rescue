@@ -6,7 +6,7 @@
 
 #include <neotokyo>
 
-#define PLUGIN_VERSION "0.2.0"
+#define PLUGIN_VERSION "0.2.1"
 #define PLUGIN_TAG "[SPAWN RESCUE]"
 
 int _lastest_spawn_team[NEO_MAXPLAYERS + 1] = { TEAM_NONE, ... };
@@ -273,10 +273,6 @@ public MRESReturn GetPlayerSpawnSpot(DHookReturn hReturn, DHookParam hParams)
     else if (StrEqual(classname, "info_player_defender"))
     {
         _lastest_spawn_team[client] = TEAM_NSF;
-    }
-    else
-    {
-        _lastest_spawn_team[client] = TEAM_NONE;
     }
 
     return MRES_Ignored;
