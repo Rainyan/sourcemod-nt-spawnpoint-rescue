@@ -1,0 +1,33 @@
+
+"Games"
+{
+	"NeotokyoSource"
+	{
+		"Signatures"
+		{
+			"Sig_CNEOGameRules__GetPlayerSpawnSpot"
+			{
+				"library"	"server"
+				"windows"	"\x83\xEC\x0C\x53\x56\x8B\x74\x24\x18\x8B\x06\x8B\x90\x04\x05\x00\x00"
+			}
+		}
+		"Functions"
+		{
+			"Fn_CNEOGameRules__GetPlayerSpawnSpot"
+			{
+				"signature"	"Sig_CNEOGameRules__GetPlayerSpawnSpot"
+				"callconv"	"thiscall"
+				"this"		"ignore"
+				"hooktype"	"gamerules"
+				"return"	"cbaseentity"
+				"arguments"
+				{
+					"player"
+					{
+						"type"	"cbaseentity"
+					}
+				}
+			}
+		}
+	}
+}
