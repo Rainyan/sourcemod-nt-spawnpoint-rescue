@@ -29,3 +29,7 @@ so the error is usually more about positional relation between multiple spawn po
 * SourceMod 1.11 or newer
   * Older versions may work, but you'll need to appropriate [DHooks extension](https://forums.alliedmods.net/showpost.php?p=2588686) for your version of SourceMod. SM 1.11 and newer do not require this extension.
 * [Neotokyo include](https://github.com/softashell/sourcemod-nt-include)
+
+## Installation
+* Move the compiled .smx binary to `addons/sourcemod/plugins`
+* Move the gamedata file to `addons/sourcemod/gamedata/neotokyo`
