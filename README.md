@@ -3,9 +3,13 @@ Experimental SourceMod plugin for Neotokyo. If a player spawns to incorrect loca
 
 The plugin will attempt to avoid stacking players in the same spawn to some extent, but sometimes this will be unavoidable.
 
-## Logging
+Mappers should **not** rely on this plugin to handle the issue for them, because the map remains broken on any server not using this plugin. This is merely a stopgap measure to avoid the bug until the map it properly fixed.
 
-The server will log the error, and also notifies players (max. once per map) about the invalid spawn point, to hopefully get the attention of the map maker:
+## Background
+
+Spawn points in NT must be separated by at least 128 Hammer units distance from all other players. If the mapper places spawns closer than this range, and one of those spawns within that 128 unit radius already has another player within, the spawning will fail, and the player ends up in "another location" (enemy spawn, etc).
+
+In addition to rescuing the unfortunate spawner, the plugin will also log the error, and also notifies players (max. once per map) about the invalid spawn point, to hopefully get the attention of the map maker:
 
 ![spawn-rescue-example](https://user-images.githubusercontent.com/6595066/226464794-09104505-33ed-4cd5-ad6c-0f9fe59bea17.png)
 
