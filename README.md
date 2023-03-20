@@ -32,4 +32,4 @@ so the error is usually more about positional relation between multiple spawn po
 
 ## Installation
 * Move the compiled .smx binary to `addons/sourcemod/plugins`
-* Move the gamedata file to `addons/sourcemod/gamedata/neotokyo`
+* Move the [gamedata file](addons/sourcemod/gamedata/neotokyo/spawnpoint_rescue.txt) to `addons/sourcemod/gamedata/neotokyo`
