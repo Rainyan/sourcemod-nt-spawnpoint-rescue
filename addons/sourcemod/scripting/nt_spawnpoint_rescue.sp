@@ -6,7 +6,7 @@
 
 #include <neotokyo>
 
-#define PLUGIN_VERSION "0.1.0"
+#define PLUGIN_VERSION "0.2.0"
 #define PLUGIN_TAG "[SPAWN RESCUE]"
 
 int _lastest_spawn_team[NEO_MAXPLAYERS + 1] = { TEAM_NONE, ... };
@@ -74,6 +74,7 @@ public void OnPlayerSpawn(Event event, const char[] name, bool dontBroadcast)
     RescueSpawnIfNeeded(client);
 }
 
+#if(0)
 // Checks if the spot is clear of (other) players, and the client is set to spawn here.
 // Uses a 128 unit radius check for nearby players.
 bool IsSpawnPointValid(int spawnpoint, int client)
@@ -98,6 +99,7 @@ bool IsSpawnPointValid(int spawnpoint, int client)
     }
     return SDKCall(call, spawnpoint, client);
 }
+#endif
 
 void RescueSpawnIfNeeded(int client)
 {
@@ -188,7 +190,7 @@ surrounding geometry; please let the mapper know so they can fix the problem!",
         PrintToChatAll("%s Player was about to spawn to incorrect spawn location!",
             PLUGIN_TAG);
         PrintToChatAll("This is a map problem; please let the mapper know so they can fix this.");
-
+#if(0)
         char classname[32];
         float pos[3];
         LogToGame("\tPossibly problematic spawn(s):");
@@ -230,6 +232,7 @@ surrounding geometry; please let the mapper know so they can fix the problem!",
             LogToGame("\t%s: position %f, %f, %f",
                 classname, pos[0], pos[1], pos[2]);
         }
+#endif
         _logged_map_error = true;
     }
 }
