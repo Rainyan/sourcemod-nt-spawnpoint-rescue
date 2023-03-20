@@ -7,7 +7,7 @@ Mappers should **not** rely on this plugin to handle the issue for them, because
 
 ## Background
 
-Spawn points in NT must be separated by at least 128 Hammer units distance from all other players. If the mapper places spawns closer than this range, and one of those spawns within that 128 unit radius already has another player within, the spawning will fail, and the player ends up in "another location" (enemy spawn, etc).
+Spawn points in NT must be separated by at least 128 Hammer units distance from all other players. If the mapper places spawns closer than this range, and one of those spawns within that 128 unit radius already has another player within, the spawning will fail, and the player ends up "somewhere else" (enemy spawn, etc).
 
 In addition to rescuing the unfortunate spawner, the plugin will also log the error, and also notifies players (max. once per map) about the invalid spawn point, to hopefully get the attention of the map maker:
 
