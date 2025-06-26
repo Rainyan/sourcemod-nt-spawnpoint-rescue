@@ -3,7 +3,7 @@ Experimental SourceMod plugin for Neotokyo. If a player spawns to incorrect loca
 
 The plugin will attempt to avoid stacking players in the same spawn to some extent, but sometimes this will be unavoidable.
 
-Mappers should **not** rely on this plugin to handle the issue for them, because the map remains broken on any server not using this plugin. This is merely a stopgap measure to avoid the bug until the map it properly fixed.
+Mappers should **not** rely on this plugin to handle the issue for them, because the map remains broken on any server not using this plugin. This is merely a stopgap measure to avoid the bug until the map is properly fixed.
 
 ## Background
 
