@@ -1,12 +1,13 @@
-#pragma semicolon 1
-
 #include <sourcemod>
 #include <sdktools>
 #include <dhooks>
 
 #include <neotokyo>
 
-#define PLUGIN_VERSION "0.2.1"
+#pragma semicolon 1
+#pragma newdecls required
+
+#define PLUGIN_VERSION "0.2.2"
 #define PLUGIN_TAG "[SPAWN RESCUE]"
 
 int _lastest_spawn_team[NEO_MAXPLAYERS + 1] = { TEAM_NONE, ... };
