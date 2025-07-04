@@ -15,7 +15,7 @@ In addition to rescuing the unfortunate spawner, the plugin will also log the er
 
 ## Build requirements
 * SourceMod 1.11 or newer
-  * Older versions may work, but you'll need to appropriate [DHooks extension](https://forums.alliedmods.net/showpost.php?p=2588686) for your version of SourceMod. SM 1.11 and newer do not require this extension.
+  * Older versions may work, but you'll need the appropriate [DHooks extension](https://forums.alliedmods.net/showpost.php?p=2588686) for your version of SourceMod. SM 1.11 and newer do not require this extension.
 * [Neotokyo include](https://github.com/softashell/sourcemod-nt-include)
 
 ## Installation
